@@ -16,6 +16,11 @@
     <%= form.text_field :name %>
   </div>
 
+  <%= form.fields_for :victims do |victims_form| %>
+    <%= victims_form.label  :nick%>
+    <%= victims_form.text_field :nick%>
+  <%end %>
+
   <div class="actions">
     <%= form.submit %>
   </div>

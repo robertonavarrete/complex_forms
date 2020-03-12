@@ -17,8 +17,11 @@
   </div>
 
   <%= form.fields_for :victims do |victims_form| %>
-    <%= victims_form.label  :nick%>
-    <%= victims_form.text_field :nick%>
+    <li><%= victims_form.label  :nick%>
+      <%= victims_form.text_field :nick%>
+      destroy?
+      <%= victims_form.check_box :_destroy%>
+    </li>
   <%end %>
 
   <div class="actions">

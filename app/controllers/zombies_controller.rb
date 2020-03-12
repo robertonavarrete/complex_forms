@@ -20,6 +20,7 @@ class ZombiesController < ApplicationController
 
   # GET /zombies/1/edit
   def edit
+    
   end
 
   # POST /zombies
@@ -70,6 +71,6 @@ class ZombiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def zombie_params
-      params.require(:zombie).permit(:name, victim_attributes: [:id, :nick])
+      params.require(:zombie).permit(:name, victims_attributes: [:id, :nick, :_destroy])
     end
 end

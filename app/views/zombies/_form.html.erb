@@ -16,6 +16,7 @@
     <%= form.text_field :name %>
   </div>
 
+  <ul>
   <%= form.fields_for :victims do |victims_form| %>
     <li><%= victims_form.label  :nick%>
       <%= victims_form.text_field :nick%>
@@ -23,6 +24,7 @@
       <%= victims_form.check_box :_destroy%>
     </li>
   <%end %>
+</ul>
 
   <div class="actions">
     <%= add_victim_button(form) %>

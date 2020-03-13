@@ -4,7 +4,7 @@ module ZombiesHelper
             css: 'btn btn-success',
             href: '#',
             id: 'add-victim',
-            data: {victim: '<p>Soy una banana</p>'}
+            data: {victim:'<li>Soy una banana</li>'}
         }
         content_tag(:button, '+ Add Victim', html_options)
     end

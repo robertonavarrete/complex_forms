@@ -18,11 +18,7 @@
 
   <ul>
   <%= form.fields_for :victims do |victims_form| %>
-    <li><%= victims_form.label  :nick%>
-      <%= victims_form.text_field :nick%>
-      destroy?
-      <%= victims_form.check_box :_destroy%>
-    </li>
+    <%= render 'victims/victims_fields', victims_form: victims_form %>
   <%end %>
 </ul>
 
